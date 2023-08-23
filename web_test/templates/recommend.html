@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommended Movies</title>
+</head>
+<body>
+    <h1>Recommended Movies</h1>
+    <table>
+        <tr>
+            <th>Movie ID</th>
+            <th>Title</th>
+            <th>Genres</th>
+            <th>AVG Rating</th>
+            <th>Prep Rating</th>
+        </tr>
+        {% for movie in movies %}
+        <tr>
+            <td>{{ movie[0] }}</td>
+            <td>{{ movie[1] }}</td>
+            <td>{{ movie[2] }}</td>
+            <td>{{ movie[3] }}</td>
+            <td>{{ movie[4] }}</td>
+            <td>{{ movie[5] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/dashboard">Go to Dashboard</a>
+</body>
+</html>
