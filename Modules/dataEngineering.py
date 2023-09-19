@@ -15,12 +15,6 @@ class dataEngineering:
         self.users = None
 
         self.n_components = 1
-    
-    def load_Filter_Ratings(self, from_loc = r'D:\Coding\Machine_Learning\Recommendation_System\input', table_name='filtered_ratings', limit=None):
-        
-        status, data = self.loadDatabase_dataFrame(from_loc, table_name, limit)
-
-        return {'status': status, 'data': data}
 
     def loadRatings(self, from_loc = r'D:\Coding\Machine_Learning\Recommendation_System\input', table_name='ratings', limit=None):
         status, data = True, self.ratings
