@@ -1,0 +1,11 @@
+{
+      "k": 60,
+      "sim_options": {
+            "name": "pearson",
+            "user_based": false
+      },
+      "bsl_options": {
+            "method": "sgd",
+            "learning_rate": 0.0005
+      }
+}
